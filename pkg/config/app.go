@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	dbo * gorm.DB
+	db * gorm.DB
 )
 
 func Connect() {
