@@ -3,10 +3,8 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"go-bookstore/pkg/models"
 	"net/http"
 	"strconv"
-
 	"github.com/gorilla/mux"
 	"github.com/sirjkm/go-bookstore/pkg/models"
 	"github.com/sirjkm/go-bookstore/pkg/utils"
@@ -59,7 +57,7 @@ func DeleteBook(w http.ResponseWriter, r *http.Request) {
 	w.Write(res)
 }
 
-func UpdateBook(w http.ResponseWriter, r *http.Response) {
+func UpdateBook(w http.ResponseWriter, r *http.Request) {
 	var updateBook = models.Book{}
 	utils.ParseBody(r, updateBook)
 	vars := mux.Vars(r)

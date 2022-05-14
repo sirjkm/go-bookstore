@@ -1,12 +1,10 @@
 package main
 
 import (
-	"go-bookstore/pkg/routes"
 	"log"
 	"net/http"
-
 	"github.com/gorilla/mux"
-	"github.com/jasonmanning/go-bookstore/pkg/routes"
+	"github.com/sirjkm/go-bookstore/pkg/routes"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
