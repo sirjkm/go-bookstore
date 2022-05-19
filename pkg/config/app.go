@@ -10,7 +10,7 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "root:stavesacre/go-bookstore?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "root:stavesacre@tcp(127.0.0.1:3306)/go-bookstore?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
